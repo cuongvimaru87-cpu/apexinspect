@@ -168,7 +168,7 @@
           </a>
 
           <!-- Mobile Hamburger Toggle -->
-          <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Mở Menu">
+          <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Mở Menu" data-i18n-aria-label="open_menu_aria">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -189,7 +189,7 @@
               <span class="text-[9px] font-bold text-brand-sapphire uppercase" data-i18n="mobile_duty">GIÁM ĐỊNH HÀNG HẢI 24/7</span>
             </div>
           </div>
-          <button type="button" id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-800" aria-label="Đóng Menu">
+          <button type="button" id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-800" aria-label="Đóng Menu" data-i18n-aria-label="close_menu_aria">
             <i data-lucide="x" class="w-6 h-6"></i>
           </button>
         </div>
@@ -750,16 +750,16 @@
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
                   <div class="bg-pearl-bg p-3.5 rounded-xl border border-pearl-border">
-                    <strong class="text-slate-900 block font-semibold mb-1" data-i18n-html="srv7_b1_html">Điều tra nguyên nhân & mức độ tổn thất:</strong>
-                    <span>Hàng ướt, mốc hỏng, cháy nổ, va chạm đâm va trên biển. Lập biên bản hiện trường pháp lý vững chắc.</span>
+                    <strong class="text-slate-900 block font-semibold mb-1" data-i18n="srv7_b1_title">Điều tra nguyên nhân & mức độ tổn thất:</strong>
+                    <span data-i18n="srv7_b1_desc">Hàng ướt, mốc hỏng, cháy nổ, va chạm đâm va trên biển. Lập biên bản hiện trường pháp lý vững chắc.</span>
                   </div>
                   <div class="bg-pearl-bg p-3.5 rounded-xl border border-pearl-border">
-                    <strong class="text-slate-900 block font-semibold mb-1" data-i18n-html="srv7_b2_html">Giám sát cứu nạn hàng hóa:</strong>
-                    <span>Phân loại hàng tổn thất, thương thảo hạ giá hoặc bán thanh lý nhằm giảm thiểu thiệt hại.</span>
+                    <strong class="text-slate-900 block font-semibold mb-1" data-i18n="srv7_b2_title">Giám sát cứu nạn hàng hóa:</strong>
+                    <span data-i18n="srv7_b2_desc">Phân loại hàng tổn thất, thương thảo hạ giá hoặc bán thanh lý nhằm giảm thiểu thiệt hại.</span>
                   </div>
                 </div>
                 <div class="pt-2 flex flex-wrap items-center justify-between gap-4">
-                  <span class="text-xs text-slate-500 font-medium" data-i18n="srv7_b3_html">Báo cáo phục vụ khiếu nại (Claim): Bằng chứng hình ảnh sắc bén, biên bản đối soát đa bên chặt chẽ.</span>
+                  <span class="text-xs text-slate-500 font-medium" data-i18n-html="srv7_b3_html"><strong>Báo cáo phục vụ khiếu nại (Claim):</strong> Bằng chứng hình ảnh sắc bén, biên bản đối soát đa bên chặt chẽ.</span>
                   <a href="#nominate" class="px-5 py-2.5 bg-brand-red hover:bg-brand-redHover text-white font-bold rounded-xl text-xs transition shadow-md shadow-brand-red/20" data-i18n="srv7_cta">
                     Chỉ định giám định tổn thất &rarr;
                   </a>
@@ -870,36 +870,36 @@
               <div class="space-y-5">
                 <div class="flex items-start justify-between gap-4">
                   <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-brand-sapphire">Trụ sở chính & Trung tâm Giám định Phía Bắc</span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Cụm Cảng Hải Phòng</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Đình Vũ, Lạch Huyện, Nam Đình Vũ, Cảng Vật Cách, Tân Cảng</p>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-sapphire" data-i18n="port_def_type">Trụ sở chính & Trung tâm Giám định Phía Bắc</span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1" data-i18n="port_def_name">Cụm Cảng Hải Phòng</h3>
+                    <p class="text-xs text-slate-500 mt-0.5" data-i18n="port_def_sub">Đình Vũ, Lạch Huyện, Nam Đình Vũ, Cảng Vật Cách, Tân Cảng</p>
                   </div>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 shrink-0">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> 24/7 Thường Trực
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> <span data-i18n="port_def_status">24/7 Thường Trực</span>
                   </span>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4 text-xs bg-pearl-bg p-4 rounded-xl border border-pearl-border">
                   <div>
-                    <span class="text-slate-500 block text-xs">Thời gian tiếp cận phương tiện:</span>
-                    <strong class="text-slate-900 text-sm font-semibold">20 - 30 Phút</strong>
+                    <span class="text-slate-500 block text-xs" data-i18n="port_def_label_time">Thời gian tiếp cận phương tiện:</span>
+                    <strong class="text-slate-900 text-sm font-semibold" data-i18n="port_def_val_time">20 - 30 Phút</strong>
                   </div>
                   <div>
-                    <span class="text-slate-500 block text-xs">Nhân sự giám định thường trực:</span>
+                    <span class="text-slate-500 block text-xs" data-i18n="port_def_label_staff">Nhân sự giám định thường trực:</span>
                     <strong class="text-slate-900 text-sm font-semibold" data-i18n="hp_staff_highlight">Giám định viên nhiều kinh nghiệm</strong>
                   </div>
                 </div>
 
                 <div>
-                  <span class="text-xs font-semibold text-slate-500 block mb-1">Mặt hàng & Nghiệp vụ mũi nhọn:</span>
-                  <p class="text-sm text-slate-800 font-medium">
+                  <span class="text-xs font-semibold text-slate-500 block mb-1" data-i18n="port_def_label_cargo">Mặt hàng & Nghiệp vụ mũi nhọn:</span>
+                  <p class="text-sm text-slate-800 font-medium" data-i18n="port_def_val_cargo">
                     Container bách hóa, Thức ăn chăn nuôi (TACN), Hàng rời công nghiệp (Than, quặng, thép), Giám định thiết bị máy móc dự án và On/Off-hire bunker survey.
                   </p>
                 </div>
 
                 <div class="border-t border-slate-200 pt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
-                  <span>Trực ban cano cao tốc và xe chuyên dụng phục vụ mọi giờ trong ngày.</span>
-                  <a href="#nominate" class="text-brand-sapphire font-bold hover:underline inline-flex items-center gap-1">
+                  <span data-i18n="port_def_notes">Trực ban cano cao tốc và xe chuyên dụng phục vụ mọi giờ trong ngày.</span>
+                  <a href="#nominate" class="text-brand-sapphire font-bold hover:underline inline-flex items-center gap-1" data-i18n="port_def_cta">
                     Chỉ định giám định tại Cảng Hải Phòng &rarr;
                   </a>
                 </div>
@@ -1052,7 +1052,7 @@
 
             <div class="pt-2">
               <a href="assets/APEX_Inspect_Company_Profile.pdf" download class="inline-flex items-center gap-2 text-sm font-bold text-brand-sapphire hover:text-brand-blue">
-                <span>Xem danh mục chi tiết thiết bị trong Hồ sơ năng lực</span>
+                <span data-i18n="eq_catalog_btn">Xem danh mục chi tiết thiết bị trong Hồ sơ năng lực</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
@@ -1063,8 +1063,8 @@
             <div class="rounded-2xl overflow-hidden border border-pearl-border shadow-xl relative">
               <img src="assets/equipment_showcase.jpg" alt="Trang thiết bị kiểm tra giám định hiện trường" class="w-full h-80 object-cover">
               <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ocean-dark/85 to-transparent p-6 text-white">
-                <span class="text-xs font-bold uppercase tracking-wider text-brand-cyan">Trực ban hiện trường</span>
-                <h4 class="font-bold text-base mt-1">Trang Bị Bảo Hộ Lao Động & Bộ Dụng Cụ Đo Đạt Tiêu Chuẩn Quốc Tế</h4>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-cyan" data-i18n="eq_badge">Trực ban hiện trường</span>
+                <h4 class="font-bold text-base mt-1" data-i18n="eq_box_title">Trang Bị Bảo Hộ Lao Động & Bộ Dụng Cụ Đo Đạt Tiêu Chuẩn Quốc Tế</h4>
               </div>
             </div>
 
@@ -1091,12 +1091,12 @@
           
           <!-- Leadership Statement (7 cols) -->
           <div class="lg:col-span-7 space-y-5">
-            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire">ĐỘI NGŨ CHUYÊN GIA THỰC CHIẾN</span>
-            <h2 class="heading-section text-slate-900">Ban Lãnh Đạo & Đội Ngũ Giám Định Viên</h2>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire" data-i18n="about_tag">ĐỘI NGŨ CHUYÊN GIA THỰC CHIẾN</span>
+            <h2 class="heading-section text-slate-900" data-i18n="about_heading">Ban Lãnh Đạo & Đội Ngũ Giám Định Viên</h2>
             
             <div class="relative bg-white p-6 sm:p-8 rounded-2xl border border-pearl-border shadow-sm space-y-4">
               <i data-lucide="quote" class="w-10 h-10 text-blue-200 absolute top-4 right-6"></i>
-              <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic" data-i18n="about_quote">
                 "Trong chuỗi cung ứng hàng hải và xuất nhập khẩu, một chứng thư giám định chuẩn xác và một báo cáo hiện trường kịp thời chính là cơ sở pháp lý vững chắc nhất để bảo vệ quyền lợi hợp pháp của khách hàng trước mọi rủi ro và tranh chấp."
               </p>
               
@@ -1105,9 +1105,9 @@
                   BC
                 </div>
                 <div>
-                  <h4 class="font-extrabold text-slate-900 text-base">Ông BÙI THANH CƯƠNG</h4>
-                  <span class="text-xs text-brand-sapphire font-semibold block">Giám Đốc Điều Hành (Director) - APEX INSPECT</span>
-                  <span class="text-[11px] text-slate-500">14+ Năm kinh nghiệm trực tiếp chỉ huy, giải quyết hàng nghìn vụ việc giám định hàng hải & cảng biển phức tạp.</span>
+                  <h4 class="font-extrabold text-slate-900 text-base" data-i18n="about_lead_name">Ông BÙI THANH CƯƠNG</h4>
+                  <span class="text-xs text-brand-sapphire font-semibold block" data-i18n="about_lead_title">Giám Đốc Điều Hành (Director) - APEX INSPECT</span>
+                  <span class="text-[11px] text-slate-500" data-i18n="about_lead_exp">14+ Năm kinh nghiệm trực tiếp chỉ huy, giải quyết hàng nghìn vụ việc giám định hàng hải & cảng biển phức tạp.</span>
                 </div>
               </div>
             </div>
@@ -1128,8 +1128,8 @@
                   ✓
                 </div>
                 <div>
-                  <strong class="text-slate-900 block text-sm">Am Hiểu Tập Quán Cảng</strong>
-                  <span class="text-slate-600">Nắm vững quy trình vận hành bến bãi, cảng biển nước sâu và khu neo trung chuyển nội địa.</span>
+                  <strong class="text-slate-900 block text-sm" data-i18n="about_badge_insight">Am Hiểu Tập Quán Cảng</strong>
+                  <span class="text-slate-600" data-i18n="about_badge_insight_sub">Nắm vững quy trình vận hành bến bãi, cảng biển nước sâu và khu neo trung chuyển nội địa.</span>
                 </div>
               </div>
             </div>
@@ -1154,15 +1154,15 @@
                 <div class="flex items-start gap-3">
                   <i data-lucide="map-pin" class="w-4 h-4 text-brand-red shrink-0 mt-0.5"></i>
                   <div>
-                    <span class="text-slate-500 block">Trụ sở chính:</span>
-                    <strong class="text-slate-800">Tổ 32, Phường An Biên, TP. Hải Phòng, Việt Nam</strong>
+                    <span class="text-slate-500 block" data-i18n="corp_label_headquarters">Trụ sở chính:</span>
+                    <strong class="text-slate-800" data-i18n="corp_val_headquarters">Tổ 32, Phường An Biên, TP. Hải Phòng, Việt Nam</strong>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-3">
                   <i data-lucide="phone" class="w-4 h-4 text-brand-red shrink-0 mt-0.5"></i>
                   <div>
-                    <span class="text-slate-500 block">Hotline Trực Ban 24/7:</span>
+                    <span class="text-slate-500 block" data-i18n="corp_label_hotline">Hotline Trực Ban 24/7:</span>
                     <strong class="text-slate-900 font-mono text-sm">(+84) 961 799 968</strong>
                   </div>
                 </div>
@@ -1170,7 +1170,7 @@
                 <div class="flex items-start gap-3">
                   <i data-lucide="mail" class="w-4 h-4 text-brand-sapphire shrink-0 mt-0.5"></i>
                   <div>
-                    <span class="text-slate-500 block">Email Nghiệp vụ:</span>
+                    <span class="text-slate-500 block" data-i18n="corp_label_email">Email Nghiệp vụ:</span>
                     <a href="mailto:survey@apexinspect.com.vn" class="text-brand-sapphire font-semibold hover:underline">survey@apexinspect.com.vn</a>
                   </div>
                 </div>
@@ -1178,7 +1178,7 @@
                 <div class="flex items-start gap-3">
                   <i data-lucide="globe" class="w-4 h-4 text-brand-sapphire shrink-0 mt-0.5"></i>
                   <div>
-                    <span class="text-slate-500 block">Website chính thức:</span>
+                    <span class="text-slate-500 block" data-i18n="corp_label_website">Website chính thức:</span>
                     <a href="https://apexinspect.com.vn" class="text-brand-sapphire font-semibold hover:underline">apexinspect.com.vn</a>
                   </div>
                 </div>
@@ -1187,7 +1187,7 @@
               <div class="pt-2">
                 <a href="assets/APEX_Inspect_Company_Profile.pdf" download class="w-full py-3 bg-ocean-dark hover:bg-ocean-navy text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow-md">
                   <i data-lucide="file-down" class="w-4 h-4 text-brand-cyan"></i>
-                  <span>Tải Hồ Sơ Năng Lực Đầy Đủ (.PDF)</span>
+                  <span data-i18n="corp_btn_download">Tải Hồ Sơ Năng Lực Đầy Đủ (.PDF)</span>
                 </a>
               </div>
             </div>
@@ -1220,34 +1220,34 @@
             <!-- Row 1: Service Type & Port -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_service">
                   1. Loại hình dịch vụ giám định <span class="text-brand-red">*</span>
                 </label>
                 <select name="service_type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
-                  <option value="draft">Giám định Mớn nước tàu biển (Draft Survey mớn đầu / mớn cuối)</option>
-                  <option value="barge">Giám định Mớn sà lan & Giám sát cân 100% TACN</option>
-                  <option value="marine">Giám định Hàng hải & Bunker Survey (BQS)</option>
-                  <option value="container">Giám định Container (IICL / Stuffing / Unstuffing)</option>
-                  <option value="liquid">Giám định Xăng dầu & Hàng hóa lỏng</option>
-                  <option value="bulk">Giám định Hàng rời (Than, quặng, clinker, sắt thép)</option>
-                  <option value="damage">Giám định Tổn thất hàng hải & Đánh giá bảo hiểm P&I</option>
+                  <option value="draft" data-i18n="nom_opt_srv1">Giám định Mớn nước tàu biển (Draft Survey mớn đầu / mớn cuối)</option>
+                  <option value="barge" data-i18n="nom_opt_srv2">Giám định Mớn sà lan & Giám sát cân 100% TACN</option>
+                  <option value="marine" data-i18n="nom_opt_srv3">Giám định Hàng hải & Bunker Survey (BQS)</option>
+                  <option value="container" data-i18n="nom_opt_srv4">Giám định Container (IICL / Stuffing / Unstuffing)</option>
+                  <option value="liquid" data-i18n="nom_opt_srv5">Giám định Xăng dầu & Hàng hóa lỏng</option>
+                  <option value="bulk" data-i18n="nom_opt_srv6">Giám định Hàng rời (Than, quặng, clinker, sắt thép)</option>
+                  <option value="damage" data-i18n="nom_opt_srv7">Giám định Tổn thất hàng hải & Đánh giá bảo hiểm P&I</option>
                 </select>
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_port">
                   2. Cụm Cảng Biển / Khu Neo tác nghiệp <span class="text-brand-red">*</span>
                 </label>
                 <select name="port" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
-                  <option value="Hai Phong Port">Cụm Cảng Hải Phòng (Đình Vũ / Lạch Huyện / Bến sông)</option>
-                  <option value="Ha Long Anchorage">Khu neo Hạ Long, Quảng Ninh</option>
-                  <option value="Cai Lan Port">Cảng Cái Lân, Quảng Ninh</option>
-                  <option value="Cam Pha Port">Cảng Cẩm Phả, Quảng Ninh</option>
-                  <option value="Nghi Son Port">Cảng Nghi Sơn, Thanh Hóa</option>
-                  <option value="Cua Lo Port">Cảng Cửa Lò, Nghệ An</option>
-                  <option value="Da Nang Port">Cảng Đà Nẵng / Cảng Quy Nhơn</option>
-                  <option value="Cai Mep Port">Cụm Cảng Cái Mép - Thị Vải / TP.HCM</option>
-                  <option value="Other">Cảng biển / ICD khác trên toàn quốc</option>
+                  <option value="Hai Phong Port" data-i18n="nom_opt_port1">Cụm Cảng Hải Phòng (Đình Vũ / Lạch Huyện / Bến sông)</option>
+                  <option value="Ha Long Anchorage" data-i18n="nom_opt_port2">Khu neo Hạ Long, Quảng Ninh</option>
+                  <option value="Cai Lan Port" data-i18n="nom_opt_port3">Cảng Cái Lân, Quảng Ninh</option>
+                  <option value="Cam Pha Port" data-i18n="nom_opt_port4">Cảng Cẩm Phả, Quảng Ninh</option>
+                  <option value="Nghi Son Port" data-i18n="nom_opt_port5">Cảng Nghi Sơn, Thanh Hóa</option>
+                  <option value="Cua Lo Port" data-i18n="nom_opt_port6">Cảng Cửa Lò, Nghệ An</option>
+                  <option value="Da Nang Port" data-i18n="nom_opt_port7">Cảng Đà Nẵng / Cảng Quy Nhơn</option>
+                  <option value="Cai Mep Port" data-i18n="nom_opt_port8">Cụm Cảng Cái Mép - Thị Vải / TP.HCM</option>
+                  <option value="Other" data-i18n="nom_opt_port9">Cảng biển / ICD khác trên toàn quốc</option>
                 </select>
               </div>
             </div>
@@ -1255,21 +1255,21 @@
             <!-- Row 2: Vessel & Cargo Info -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_vessel">
                   Tên Tàu / Sà lan / Container <span class="text-brand-red">*</span>
                 </label>
-                <input type="text" name="vessel_name" required placeholder="Ví dụ: M/V PACIFIC GLORY" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
+                <input type="text" name="vessel_name" required placeholder="Ví dụ: M/V PACIFIC GLORY" data-i18n-placeholder="nom_ph_vessel" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n="nom_label_cargo">
                   Tên mặt hàng & Khối lượng B/L
                 </label>
-                <input type="text" name="cargo_info" placeholder="Ví dụ: 62,500 MT Ngô hạt" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
+                <input type="text" name="cargo_info" placeholder="Ví dụ: 62,500 MT Ngô hạt" data-i18n-placeholder="nom_ph_cargo" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n="nom_label_eta">
                   Thời gian tàu cập / dự kiến làm hàng
                 </label>
                 <input type="date" name="survey_date" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
@@ -1279,42 +1279,42 @@
             <!-- Row 3: Client Contact -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2 border-t border-pearl-border">
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_name">
                   Họ tên người chỉ định <span class="text-brand-red">*</span>
                 </label>
-                <input type="text" name="client_name" required placeholder="Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
+                <input type="text" name="client_name" required placeholder="Nguyễn Văn A" data-i18n-placeholder="nom_ph_name" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_company">
                   Tên Công ty / Đơn vị <span class="text-brand-red">*</span>
                 </label>
-                <input type="text" name="company_name" required placeholder="Công ty TNHH Logistics..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
+                <input type="text" name="company_name" required placeholder="Công ty TNHH Logistics..." data-i18n-placeholder="nom_ph_company" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-html="nom_label_phone">
                   Số điện thoại liên hệ <span class="text-brand-red">*</span>
                 </label>
-                <input type="tel" name="phone" required placeholder="0912 xxx xxx" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
+                <input type="tel" name="phone" required placeholder="0912 xxx xxx" data-i18n-placeholder="nom_ph_phone" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition">
               </div>
             </div>
 
             <!-- Notes -->
             <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n="nom_label_notes">
                 Ghi chú thêm về yêu cầu tác nghiệp (nếu có)
               </label>
-              <textarea name="notes" rows="3" placeholder="Yêu cầu cụ thể: lấy mẫu mấy bên, kẹp chì seal hãng, yêu cầu cấp Interim Report trong ca đêm..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition"></textarea>
+              <textarea name="notes" rows="3" placeholder="Yêu cầu cụ thể: lấy mẫu mấy bên, kẹp chì seal hãng, yêu cầu cấp Interim Report trong ca đêm..." data-i18n-placeholder="nom_ph_notes" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-sapphire focus:border-transparent transition"></textarea>
             </div>
 
             <!-- Submit Button -->
             <div class="text-center pt-2">
               <button type="submit" class="w-full sm:w-auto px-10 py-4 bg-brand-sapphire hover:bg-brand-sapphireHover text-white font-bold rounded-xl text-sm sm:text-base shadow-lg shadow-brand-sapphire/30 transition transform hover:-translate-y-0.5 active:scale-95 inline-flex items-center justify-center gap-2">
                 <i data-lucide="check-circle" class="w-5 h-5 text-brand-cyan"></i>
-                <span>Gửi Chỉ Định & Nhận Xác Nhận Tác Nghiệp</span>
+                <span data-i18n="nom_btn_submit">Gửi Chỉ Định & Nhận Xác Nhận Tác Nghiệp</span>
               </button>
-              <p class="text-[11px] text-slate-500 mt-2">
+              <p class="text-[11px] text-slate-500 mt-2" data-i18n-html="nom_hotline_note">
                 Cần hỗ trợ khẩn cấp ngay tại tàu? Vui lòng gọi trực ban hotline 24/7: <a href="tel:0961799968" class="text-brand-red font-bold underline">0961 799 968</a>.
               </p>
             </div>
@@ -1425,13 +1425,13 @@
         <div class="space-y-3">
           <h4 class="text-xs font-bold uppercase tracking-wider text-white" data-i18n="footer_links_title">Dịch Vụ Trọng Điểm</h4>
           <ul class="space-y-2">
-            <li><a href="#services" class="hover:text-brand-cyan transition">Draft Survey (Mớn nước)</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Nông sản rời & TACN</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Bunker Survey (BQS)</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Giám định Container (IICL)</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Xăng dầu & Hóa chất lỏng</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Hàng rời & Quặng khoáng sản</a></li>
-            <li><a href="#services" class="hover:text-brand-cyan transition">Khảo sát tổn thất Bảo hiểm & P&I</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv1">Draft Survey (Mớn nước)</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv2">Nông sản rời & TACN</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv3">Bunker Survey (BQS)</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv4">Giám định Container (IICL)</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv5">Xăng dầu & Hóa chất lỏng</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv6">Hàng rời & Quặng khoáng sản</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition" data-i18n="ft_link_srv7">Khảo sát tổn thất Bảo hiểm & P&I</a></li>
           </ul>
         </div>
 
@@ -1439,12 +1439,12 @@
         <div class="space-y-3">
           <h4 class="text-xs font-bold uppercase tracking-wider text-white" data-i18n="footer_coverage_title">Mạng Lưới Trực Chiến</h4>
           <ul class="space-y-2">
-            <li><a href="#network" class="hover:text-brand-cyan transition">Cảng Hải Phòng (Đình Vũ, Lạch Huyện)</a></li>
-            <li><a href="#network" class="hover:text-brand-cyan transition">Khu neo Hạ Long & Hòn Gai</a></li>
-            <li><a href="#network" class="hover:text-brand-cyan transition">Cảng Cái Lân & Cẩm Phả</a></li>
-            <li><a href="#network" class="hover:text-brand-cyan transition">Cảng Nghi Sơn & Cửa Lò</a></li>
-            <li><a href="#network" class="hover:text-brand-cyan transition">Cảng Đà Nẵng & Quy Nhơn</a></li>
-            <li><a href="#network" class="hover:text-brand-cyan transition">Cụm Cảng Cái Mép - Thị Vải & TP.HCM</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port1">Cảng Hải Phòng (Đình Vũ, Lạch Huyện)</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port2">Khu neo Hạ Long & Hòn Gai</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port3">Cảng Cái Lân & Cẩm Phả</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port4">Cảng Nghi Sơn & Cửa Lò</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port5">Cảng Đà Nẵng & Quy Nhơn</a></li>
+            <li><a href="#network" class="hover:text-brand-cyan transition" data-i18n="ft_link_port6">Cụm Cảng Cái Mép - Thị Vải & TP.HCM</a></li>
           </ul>
         </div>
 
@@ -1452,8 +1452,8 @@
         <div class="space-y-3">
           <h4 class="text-xs font-bold uppercase tracking-wider text-white" data-i18n="footer_legal_title">Chuẩn Mực & Pháp Lý</h4>
           <div class="space-y-2 text-xs text-slate-400">
-            <p>Hệ thống quản lý chất lượng đạt chuẩn quốc tế <strong>ISO/IEC 17020:2012</strong>.</p>
-            <p>Quy trình lấy mẫu tuân thủ nghiêm ngặt quy tắc thương mại <strong>GAFTA & FOSFA</strong>.</p>
+            <p data-i18n-html="ft_accreditation_1">Hệ thống quản lý chất lượng đạt chuẩn quốc tế <strong>ISO/IEC 17020:2012</strong>.</p>
+            <p data-i18n-html="ft_accreditation_2">Quy trình lấy mẫu tuân thủ nghiêm ngặt quy tắc thương mại <strong>GAFTA & FOSFA</strong>.</p>
             <div class="pt-2">
               <a href="#tracking" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold transition border border-white/10">
                 <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-cyan"></i>
@@ -1468,7 +1468,7 @@
       <!-- Bottom Disclaimer & Copyright -->
       <div class="mt-12 pt-8 border-t border-ocean-navy flex flex-wrap items-center justify-between gap-4 text-[11px]">
         <p data-i18n="footer_copyright">© 2026 CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX (APEX INSPECT). All Rights Reserved.</p>
-        <p class="text-slate-400">Độc lập • Khách quan • Chuẩn xác • Trách nhiệm</p>
+        <p class="text-slate-400" data-i18n="ft_values">Độc lập • Khách quan • Chuẩn xác • Trách nhiệm</p>
       </div>
     </div>
   </footer>
@@ -1477,20 +1477,20 @@
   <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
     
     <!-- Quick Hotline Call Button (Sampler from Logo Red Wave) -->
-    <a href="tel:0961799968" class="group flex items-center gap-2.5 px-4 py-3 bg-brand-red hover:bg-brand-redHover text-white rounded-full shadow-2xl transition transform hover:scale-105 active:scale-95" aria-label="Gọi Trực Ban 24/7">
+    <a href="tel:0961799968" class="group flex items-center gap-2.5 px-4 py-3 bg-brand-red hover:bg-brand-redHover text-white rounded-full shadow-2xl transition transform hover:scale-105 active:scale-95" aria-label="Gọi Trực Ban 24/7" data-i18n-aria-label="call_hotline_aria">
       <span class="w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
       <i data-lucide="phone-call" class="w-5 h-5"></i>
       <span class="text-xs font-bold pr-1">0961 799 968</span>
     </a>
 
     <!-- Scroll To Top Button -->
-    <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-ocean-dark/85 hover:bg-ocean-dark text-white shadow-lg flex items-center justify-center transition border border-white/20 backdrop-blur-md" aria-label="Lên đầu trang">
+    <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-ocean-dark/85 hover:bg-ocean-dark text-white shadow-lg flex items-center justify-center transition border border-white/20 backdrop-blur-md" aria-label="Lên đầu trang" data-i18n-aria-label="back_to_top_aria">
       <i data-lucide="chevron-up" class="w-5 h-5"></i>
     </button>
   </div>
 
   <!-- Lucide Script Init & Application Logic -->
-  <script src="js/app.js?v=5"></script>
+  <script src="js/app.js?v=7"></script>
   <script>
     // Initialize Lucide vector icons
     lucide.createIcons();
