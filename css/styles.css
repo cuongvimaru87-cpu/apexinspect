@@ -184,23 +184,49 @@ html {
 .watermark-apex {
   background-image: url('../assets/apex_watermark_light.png');
   background-repeat: no-repeat;
-  background-position: right -30px center;
-  background-size: 520px auto;
+  background-position: right 4% center;
+  background-size: 340px auto;
+}
+
+/* Specific refined scale for Tracking section so the full logo is completely visible */
+#tracking.watermark-symbol {
+  background-position: right 3% center;
+  background-size: 260px auto;
+}
+
+@media (min-width: 1536px) {
+  .watermark-symbol,
+  .watermark-apex {
+    background-position: right 5% center;
+    background-size: 380px auto;
+  }
+  #tracking.watermark-symbol {
+    background-position: right 4% center;
+    background-size: 280px auto;
+  }
 }
 
 @media (max-width: 1024px) {
   .watermark-symbol,
   .watermark-apex {
-    background-position: right -80px center;
-    background-size: 380px auto;
+    background-position: right 2% center;
+    background-size: 260px auto;
+  }
+  #tracking.watermark-symbol {
+    background-position: right 2% center;
+    background-size: 200px auto;
   }
 }
 
 @media (max-width: 640px) {
   .watermark-symbol,
   .watermark-apex {
-    background-position: center center;
-    background-size: 280px auto;
+    background-position: center bottom 12px;
+    background-size: 180px auto;
+  }
+  #tracking.watermark-symbol {
+    background-position: center bottom 8px;
+    background-size: 160px auto;
   }
 }
 

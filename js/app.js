@@ -14,7 +14,7 @@ const I18N = {
     doc_title: "APEX INSPECT - Công Ty Cổ Phần Kiểm Định & Giám Định APEX | Cargo & Marine Survey",
     lang_select_label: "Ngôn ngữ:",
     company_header_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
-    company_header_sub_html: "<span>TÊN VIẾT TẮT: <strong class="text-brand-red font-black">APEX INSPECT</strong></span><span class="text-slate-300">•</span><span>MST: 0202371906</span>",
+    company_header_sub_html: "<span>TÊN VIẾT TẮT: <strong class=\"text-brand-red font-black\">APEX INSPECT</strong></span><span class=\"text-slate-300\">•</span><span>MST: 0202371906</span>",
     company_header_med_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
     company_header_med_sub: "TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906",
     hero_company_badge: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
@@ -58,7 +58,10 @@ const I18N = {
     hero_btn_profile: "Tải Hồ Sơ Năng Lực (PDF 27 trang)",
     trust_iso: "Tiêu chuẩn ISO/IEC 17020",
     trust_gafta: "Chuẩn GAFTA & FOSFA Sampling",
-    trust_surveyors: "Giám định viên 100% ĐH Hàng Hải",
+    trust_surveyors: "Giám định viên nhiều kinh nghiệm",
+    hp_staff_highlight: "Giám định viên nhiều kinh nghiệm",
+    about_surveyor_title: "Giám định viên chuyên nghiệp",
+    about_surveyor_desc: "Tốt nghiệp chính quy các chuyên ngành Điều khiển tàu biển, Vỏ tàu, Máy tàu, Khai thác cảng.",
     
     // Hero Right Highlight Cards
     hero_card1_title: "Phản Ứng Nhanh (30 - 60 Phút)",
@@ -90,7 +93,7 @@ const I18N = {
 
     // Services Section
     srv_tag: "DANH MỤC DỊCH VỤ TOÀN DIỆN",
-    srv_heading: "7 Trụ Cột Giám Định Chuyên Sâu Của APEX",
+    srv_heading: "Các Công Tác Giám Định Chuyên Sâu Của APEX",
     srv_desc: "Quy trình chuẩn hóa, đội ngũ giàu kinh nghiệm thực chiến và trang thiết bị hiện đại đảm bảo tính chính xác tuyệt đối cho từng chuyến hàng.",
     
     // Filter Buttons
@@ -327,7 +330,10 @@ const I18N = {
     hero_btn_profile: "Download Profile (27-Page PDF)",
     trust_iso: "ISO/IEC 17020 Standard",
     trust_gafta: "GAFTA & FOSFA Sampling Rules",
-    trust_surveyors: "100% Maritime University Surveyors",
+    trust_surveyors: "Senior & Experienced Marine Surveyors",
+    hp_staff_highlight: "Senior & Experienced Marine Surveyors",
+    about_surveyor_title: "Professional Marine Surveyors",
+    about_surveyor_desc: "Formally qualified in Navigation, Naval Architecture, Marine Engineering, and Port Operations.",
 
     // Hero Right Highlight Cards
     hero_card1_title: "Rapid Mobilization (30 - 60 Mins)",
@@ -359,7 +365,7 @@ const I18N = {
 
     // Services Section
     srv_tag: "COMPREHENSIVE SERVICE PORTFOLIO",
-    srv_heading: "APEX's 7 Core Inspection Capabilities",
+    srv_heading: "Specialized Survey Operations by APEX",
     srv_desc: "Standardized procedures, veteran maritime surveyors, and modern calibrated equipment ensuring absolute precision for every cargo.",
     
     // Filter Buttons
@@ -635,28 +641,13 @@ const CERTIFICATE_DATABASE = {
 
 let currentLang = "vi";
 
-// 3. Language Controller
-function initLanguageToggle() {
-  const savedLang = localStorage.getItem("apex_lang");
-  if (savedLang && (savedLang === "vi" || savedLang === "en")) {
-    currentLang = savedLang;
-  }
-
-  // Bind click handlers to all lang toggle buttons
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const lang = btn.dataset.lang;
-      setLanguage(lang);
-    });
-  });
-
-  // Apply initial language
-  setLanguage(currentLang);
-}
-
-function setLanguage(lang) {
+// 3. Global Language Switcher with Direct Window Exposure
+window.setLanguage = function(lang) {
+  if (!lang || !I18N[lang]) return;
   currentLang = lang;
-  localStorage.setItem("apex_lang", lang);
+  try {
+    localStorage.setItem("apex_lang", lang);
+  } catch (e) {}
   document.documentElement.lang = lang;
 
   // Dynamically update document title
@@ -664,9 +655,10 @@ function setLanguage(lang) {
     document.title = I18N[lang].doc_title;
   }
 
-  // Update button active styles
+  // Update button active styles across ALL button groups (topbar, navbar, mobile drawer)
   document.querySelectorAll(".lang-btn").forEach(btn => {
-    const isTarget = btn.dataset.lang === lang;
+    const targetLang = btn.dataset.lang || btn.getAttribute("data-lang");
+    const isTarget = targetLang === lang;
     if (isTarget) {
       btn.classList.add("bg-brand-sapphire", "text-white");
       btn.classList.remove("text-slate-400", "text-slate-600", "hover:text-white", "hover:text-brand-sapphire");
@@ -679,7 +671,7 @@ function setLanguage(lang) {
   // 1. Text elements
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.dataset.i18n;
-    if (I18N[lang] && I18N[lang][key]) {
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
       el.textContent = I18N[lang][key];
     }
   });
@@ -687,7 +679,7 @@ function setLanguage(lang) {
   // 2. HTML elements (with spans or rich accents)
   document.querySelectorAll("[data-i18n-html]").forEach(el => {
     const key = el.dataset.i18nHtml;
-    if (I18N[lang] && I18N[lang][key]) {
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
       el.innerHTML = I18N[lang][key];
     }
   });
@@ -695,21 +687,44 @@ function setLanguage(lang) {
   // 3. Input Placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.dataset.i18nPlaceholder;
-    if (I18N[lang] && I18N[lang][key]) {
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
       el.placeholder = I18N[lang][key];
     }
   });
 
-  // Refresh active port details card
+  // 4. Refresh active port details card
   const activePortBtn = document.querySelector(".port-select-btn.border-brand-sapphire, .port-select-btn.border-brand-cyan");
   if (activePortBtn && window.renderPortDetail) {
     window.renderPortDetail(activePortBtn.dataset.port);
   }
 
-  // Re-render Lucide icons if available
-  if (window.lucide && typeof lucide.createIcons === "function") {
-    lucide.createIcons();
-  }
+  // 5. Re-render Lucide icons safely
+  try {
+    if (window.lucide && typeof lucide.createIcons === "function") {
+      lucide.createIcons();
+    }
+  } catch (e) {}
+};
+
+function initLanguageToggle() {
+  try {
+    const savedLang = localStorage.getItem("apex_lang");
+    if (savedLang && (savedLang === "vi" || savedLang === "en")) {
+      currentLang = savedLang;
+    }
+  } catch (e) {}
+
+  // Bind click handlers to all lang toggle buttons
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const lang = btn.dataset.lang || btn.getAttribute("data-lang");
+      window.setLanguage(lang);
+    });
+  });
+
+  // Apply initial language
+  window.setLanguage(currentLang);
 }
 
 // 4. Service Category Filter
@@ -899,7 +914,7 @@ function initPortMapInteractions() {
       typeEn: "Operational HQ & Northern Vietnam Inspection Hub",
       timeVi: "20 - 30 Phút",
       timeEn: "20 - 30 Minutes",
-      staffVi: "15+ Giám định viên thường trực 24/7",
+      staffVi: "Giám định viên nhiều kinh nghiệm",
       staffEn: "15+ Marine Surveyors on duty 24/7",
       cargoVi: "Container, Thức ăn chăn nuôi (TACN), Hàng rời công nghiệp, Thiết bị dự án",
       cargoEn: "Containers, Animal Feedstuffs (TACN), Industrial Bulk Cargo, Project Machinery",
