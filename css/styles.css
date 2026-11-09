@@ -1,29 +1,31 @@
-/* APEX INSPECT - Design System & Custom Styles */
+/* APEX INSPECT - Maritime Design System (Harmonized with New Logo) */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap');
 
 :root {
-  --primary: #0047BA;
-  --primary-hover: #003691;
-  --primary-dark: #00225D;
-  --primary-light: #EBF3FF;
+  /* Brand Colors Extracted Directly From New Logo */
+  --color-brand-blue: #003885;          /* Deep Royal Blue from APEX text & ship */
+  --color-brand-sapphire: #0052CC;      /* Vibrant Sapphire Blue from arching A */
+  --color-brand-cyan: #0088FF;          /* Cerulean Wave Accent */
+  --color-brand-red: #D2001B;           /* Crimson Red Wave Accent from logo keel */
+  --color-brand-red-hover: #B50016;
   
-  --navy: #0B192C;
-  --navy-dark: #060E1A;
-  --navy-surface: #12233B;
+  /* Oceanic Navy Foundations */
+  --color-ocean-dark: #041026;          /* Deepest Midnight Sea */
+  --color-ocean-navy: #071E42;          /* Oceanic Navy */
+  --color-ocean-blue: #0B2B5C;          /* Midnight Sapphire */
+  --color-ocean-surface: #0E356E;       /* Elevated dark card */
   
-  --accent: #E11D48;
-  --accent-hover: #BE123C;
-  --accent-light: #FFE4E6;
+  /* Marine Pearl Light Surfaces */
+  --color-pearl-bg: #F5F8FD;            /* Pristine cool maritime backdrop */
+  --color-pearl-card: #FFFFFF;          /* Crisp card surface */
+  --color-pearl-border: #DDE7F5;        /* Subtle nautical border */
+  --color-pearl-border-hover: #B6D2F5;  /* Hover border */
   
-  --success: #059669;
-  --warning: #D97706;
-  
-  --text-main: #0F172A;
-  --text-muted: #64748B;
-  --text-light: #94A3B8;
-  
-  --bg-main: #F8FAFC;
-  --border-light: #E2E8F0;
+  /* Text Tokens */
+  --color-text-main: #0B192C;
+  --color-text-slate: #1E293B;
+  --color-text-muted: #536B88;
+  --color-text-light: #8BA0BA;
   
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'Space Grotesk', monospace;
@@ -32,37 +34,56 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-sans);
-  color: var(--text-main);
-  background-color: var(--bg-main);
+  color: var(--color-text-main);
+  background-color: var(--color-pearl-bg);
   -webkit-font-smoothing: antialiased;
 }
 
 /* Accessible focus ring */
 *:focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--color-brand-sapphire);
   outline-offset: 2px;
 }
 
-/* Glassmorphism Classes */
+/* Glassmorphism Styles */
 .glass-nav {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  border-bottom: 1px solid rgba(219, 231, 247, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(4, 16, 38, 0.04);
 }
 
 .glass-dark {
-  background: rgba(11, 25, 44, 0.88);
+  background: rgba(7, 30, 66, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(4, 16, 38, 0.3);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  border: 1px solid var(--color-pearl-border);
+}
+
+/* Hero Background Gradient (Sapphire Maritime Wave) */
+.hero-gradient {
+  background: radial-gradient(circle at 85% 15%, rgba(0, 136, 255, 0.18) 0%, transparent 45%),
+              radial-gradient(circle at 15% 85%, rgba(210, 0, 27, 0.12) 0%, transparent 40%),
+              linear-gradient(135deg, #041026 0%, #071E42 55%, #0B2B5C 100%);
+}
+
+/* Section Pearl Gradient */
+.pearl-gradient {
+  background: linear-gradient(180deg, #F5F8FD 0%, #EBF2FA 100%);
+}
+
+/* Oceanic Dark Section */
+.ocean-gradient {
+  background: linear-gradient(165deg, #041026 0%, #071E42 60%, #0B2B5C 100%);
 }
 
 /* Card Hover Elevation */
@@ -72,8 +93,8 @@ html {
 
 .hover-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px -8px rgba(11, 25, 44, 0.12), 0 4px 8px -2px rgba(11, 25, 44, 0.04);
-  border-color: #BFDBFE;
+  box-shadow: 0 16px 36px -8px rgba(0, 56, 133, 0.14), 0 4px 10px -2px rgba(0, 56, 133, 0.04);
+  border-color: #93C5FD;
 }
 
 /* Pulsing radar dot for real-time readiness */
@@ -101,32 +122,20 @@ html {
   }
 }
 
-/* Subtle Shimmer for High Priority elements */
-.badge-shimmer {
-  background: linear-gradient(90deg, rgba(0, 71, 186, 0.08) 0%, rgba(0, 71, 186, 0.2) 50%, rgba(0, 71, 186, 0.08) 100%);
-  background-size: 200% 100%;
-  animation: shimmer 3s infinite linear;
-}
-
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #EDF3FA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #B4CCE8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #0052CC;
 }
 
 /* Typography Scale Tweaks */
@@ -168,4 +177,12 @@ html {
   display: inline-block;
   transform: rotate(-3deg);
   box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+}
+
+/* Watermark Background */
+.watermark-symbol {
+  background-image: url('../assets/apex_symbol.png');
+  background-repeat: no-repeat;
+  background-position: right -60px center;
+  background-size: 480px auto;
 }
