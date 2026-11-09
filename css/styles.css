@@ -179,10 +179,41 @@ html {
   box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
 }
 
-/* Watermark Background */
-.watermark-symbol {
-  background-image: url('../assets/apex_symbol.png');
+/* Watermark Background with Full APEX INSPECT Logo */
+.watermark-symbol,
+.watermark-apex {
+  background-image: url('../assets/apex_watermark_light.png');
   background-repeat: no-repeat;
-  background-position: right -60px center;
-  background-size: 480px auto;
+  background-position: right -30px center;
+  background-size: 520px auto;
+}
+
+@media (max-width: 1024px) {
+  .watermark-symbol,
+  .watermark-apex {
+    background-position: right -80px center;
+    background-size: 380px auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .watermark-symbol,
+  .watermark-apex {
+    background-position: center center;
+    background-size: 280px auto;
+  }
+}
+
+.watermark-apex-dark {
+  background-image: url('../assets/apex_watermark_dark.png');
+  background-repeat: no-repeat;
+  background-position: right 40px center;
+  background-size: 540px auto;
+}
+
+@media (max-width: 1024px) {
+  .watermark-apex-dark {
+    background-position: center center;
+    background-size: 340px auto;
+  }
 }

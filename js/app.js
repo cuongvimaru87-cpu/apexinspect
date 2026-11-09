@@ -10,13 +10,33 @@ const I18N = {
     // Announcement & Top Bar
     top_readiness: "Trực Ban Hiện Trường 24/7",
     top_port_cluster: "Cụm Cảng Hải Phòng & Quảng Ninh (Hạ Long, Cái Lân) sẵn sàng tác nghiệp trong 30-45 phút",
+    // Single-Language Separation & Identity
+    doc_title: "APEX INSPECT - Công Ty Cổ Phần Kiểm Định & Giám Định APEX | Cargo & Marine Survey",
+    lang_select_label: "Ngôn ngữ:",
+    company_header_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
+    company_header_sub_html: "<span>TÊN VIẾT TẮT: <strong class="text-brand-red font-black">APEX INSPECT</strong></span><span class="text-slate-300">•</span><span>MST: 0202371906</span>",
+    company_header_med_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
+    company_header_med_sub: "TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906",
+    hero_company_badge: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
+    about_profile_tag: "Hồ Sơ Doanh Nghiệp",
+    company_about_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
+    company_about_sub: "TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906",
+    company_footer_name: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
+    company_footer_sub: "TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906",
+    footer_iso_badge: "CHỨNG NHẬN ISO/IEC 17020",
+    tracking_sample_label: "Mã chứng thư mẫu thực tế:",
+    pill_cert_1: "#26B1386 (Draft Survey Ngô hạt)",
+    pill_cert_2: "#26B1332 (Mớn Sà Lan & Cân Khô Đậu)",
+    pill_cert_3: "#26C0812 (Bunker & Xăng Dầu)",
+    pill_cert_4: "#26D0499 (Container Máy Móc)",
+    net_select_label: "Chọn cụm cảng cần tác nghiệp:",
     
     // Header Brand & Navigation
     company_full_vi: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
     company_full_en: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
     company_short_label: "TÊN VIẾT TẮT:",
     company_short_name: "APEX INSPECT",
-    company_tax_id: "MST: 0202240957",
+    company_tax_id: "MST: 0202371906",
     nav_about: "Về APEX",
     nav_services: "Dịch vụ Giám định",
     nav_capabilities: "Năng lực & Thiết bị",
@@ -155,6 +175,9 @@ const I18N = {
     net_qn_title: "Khu Neo Hạ Long & Cảng Cái Lân",
     net_qn_sub: "Trạm hiện trường thường trực Vịnh Bái Tử Long",
     net_qn_time: "30 - 45 Phút ra phao neo",
+    net_ns_title: "Cảng Nghi Sơn & Cửa Lò",
+    net_ns_sub: "Thanh Hóa, Nghệ An (Xăng dầu & Clinker)",
+    net_ns_time: "40 - 60 Phút",
     net_mt_title: "Cụm Cảng Miền Trung",
     net_mt_sub: "Trạm hiện trường Nghi Sơn & Đà Nẵng",
     net_mt_time: "40 - 60 Phút",
@@ -256,13 +279,33 @@ const I18N = {
     // Announcement & Top Bar
     top_readiness: "24/7 Field Operations Duty",
     top_port_cluster: "Hai Phong & Quang Ninh (Ha Long, Cai Lan) port clusters ready for deployment within 30-45 mins",
+    // Single-Language Separation & Identity
+    doc_title: "APEX INSPECT - APEX Inspection & Survey Joint Stock Company | Marine & Cargo Survey",
+    lang_select_label: "Language:",
+    company_header_name: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
+    company_header_sub_html: "<span>SHORT NAME: <strong class=\"text-brand-red font-black\">APEX INSPECT</strong></span><span class=\"text-slate-300\">•</span><span>TAX ID: 0202371906</span>",
+    company_header_med_name: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
+    company_header_med_sub: "SHORT NAME: APEX INSPECT • TAX ID: 0202371906",
+    hero_company_badge: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
+    about_profile_tag: "Corporate Profile",
+    company_about_name: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
+    company_about_sub: "SHORT NAME: APEX INSPECT • TAX ID: 0202371906",
+    company_footer_name: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
+    company_footer_sub: "SHORT NAME: APEX INSPECT • TAX ID: 0202371906",
+    footer_iso_badge: "ISO/IEC 17020 ACCREDITED",
+    tracking_sample_label: "Sample Live Certificates:",
+    pill_cert_1: "#26B1386 (Corn Draft Survey)",
+    pill_cert_2: "#26B1332 (Barge Draft & SBM Scale)",
+    pill_cert_3: "#26C0812 (Bunker & Petroleum)",
+    pill_cert_4: "#26D0499 (Machinery Container)",
+    net_select_label: "Select operational port cluster:",
     
     // Header Brand & Navigation
     company_full_vi: "CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX",
     company_full_en: "APEX INSPECTION AND SURVEY JOINT STOCK COMPANY",
     company_short_label: "SHORT NAME:",
     company_short_name: "APEX INSPECT",
-    company_tax_id: "TAX ID: 0202240957",
+    company_tax_id: "TAX ID: 0202371906",
     nav_about: "About APEX",
     nav_services: "Inspection Services",
     nav_capabilities: "Capacity & Gear",
@@ -401,6 +444,9 @@ const I18N = {
     net_qn_title: "Ha Long Anchorages & Cai Lan Port",
     net_qn_sub: "Bai Tu Long Bay Permanent Field Station",
     net_qn_time: "30 - 45 Mins offshore",
+    net_ns_title: "Nghi Son & Cua Lo Ports",
+    net_ns_sub: "Thanh Hoa, Nghe An (Petroleum & Clinker)",
+    net_ns_time: "40 - 60 Mins",
     net_mt_title: "Central Vietnam Seaports",
     net_mt_sub: "Nghi Son & Da Nang Field Stations",
     net_mt_time: "40 - 60 Mins",
@@ -613,6 +659,11 @@ function setLanguage(lang) {
   localStorage.setItem("apex_lang", lang);
   document.documentElement.lang = lang;
 
+  // Dynamically update document title
+  if (I18N[lang] && I18N[lang].doc_title) {
+    document.title = I18N[lang].doc_title;
+  }
+
   // Update button active styles
   document.querySelectorAll(".lang-btn").forEach(btn => {
     const isTarget = btn.dataset.lang === lang;
@@ -648,6 +699,12 @@ function setLanguage(lang) {
       el.placeholder = I18N[lang][key];
     }
   });
+
+  // Refresh active port details card
+  const activePortBtn = document.querySelector(".port-select-btn.border-brand-sapphire, .port-select-btn.border-brand-cyan");
+  if (activePortBtn && window.renderPortDetail) {
+    window.renderPortDetail(activePortBtn.dataset.port);
+  }
 
   // Re-render Lucide icons if available
   if (window.lucide && typeof lucide.createIcons === "function") {
@@ -907,20 +964,11 @@ function initPortMapInteractions() {
     }
   };
 
-  portButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      portButtons.forEach(b => {
-        b.classList.remove("border-brand-sapphire", "bg-brand-lightBlue/40");
-        b.classList.add("border-slate-200", "bg-white");
-      });
-      btn.classList.add("border-brand-sapphire", "bg-brand-lightBlue/40");
-      btn.classList.remove("border-slate-200", "bg-white");
+  window.renderPortDetail = function(portKey) {
+    const data = PORT_DATA[portKey];
+    const isEn = currentLang === "en";
 
-      const portKey = btn.dataset.port;
-      const data = PORT_DATA[portKey];
-      const isEn = currentLang === "en";
-
-      if (data && portDetailCard) {
+    if (data && portDetailCard) {
         portDetailCard.innerHTML = `
           <div class="space-y-4 animate-fade-in">
             <div class="flex items-start justify-between gap-3">
@@ -963,6 +1011,18 @@ function initPortMapInteractions() {
           </div>
         `;
       }
+  };
+
+  portButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      portButtons.forEach(b => {
+        b.classList.remove("border-brand-sapphire", "bg-brand-lightBlue/40");
+        b.classList.add("border-slate-200", "bg-white");
+      });
+      btn.classList.add("border-brand-sapphire", "bg-brand-lightBlue/40");
+      btn.classList.remove("border-slate-200", "bg-white");
+
+      window.renderPortDetail(btn.dataset.port);
     });
   });
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APEX INSPECT - Công Ty Cổ Phần Kiểm Định & Giám Định APEX | Cargo & Marine Survey</title>
+  <title data-i18n="doc_title">APEX INSPECT - Công Ty Cổ Phần Kiểm Định & Giám Định APEX | Cargo & Marine Survey</title>
   <meta name="description" content="APEX INSPECT - Tổ chức giám định độc lập hàng đầu về hàng hải, nông sản rời TACN, mớn nước tàu biển (Draft Survey), xăng dầu, container và tổn thất tại Cảng Hải Phòng, Quảng Ninh và các cảng biển toàn quốc.">
   <meta name="keywords" content="APEX INSPECT, giám định mớn nước, draft survey, giám định nông sản, TACN, giám định xăng dầu, bunker survey, cảng hải phòng, khu neo hạ long, cảng cái lân">
   
@@ -102,33 +102,30 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo & Full Company Names -->
-        <a href="#" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none py-1" aria-label="APEX INSPECT Trang Chủ">
-          <!-- Authentic Logo from Image 2 -->
+        <!-- Brand Logo & Pure Single-Language Company Identity -->
+        <a href="#" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none py-1" aria-label="APEX INSPECT">
+          <!-- Authentic Logo -->
           <img src="assets/apex_logo_official.png" alt="APEX INSPECT" class="h-12 sm:h-14 w-auto object-contain transition duration-200 group-hover:scale-105 shrink-0">
           
-          <!-- Full Bilingual Company Identity (Desktop) -->
+          <!-- Pure Single-Language Company Identity (Desktop) -->
           <div class="hidden xl:flex flex-col justify-center text-left border-l-2 border-slate-200 pl-3">
-            <span class="text-[12px] font-black text-[#041026] tracking-tight leading-tight uppercase font-sans" data-i18n="company_full_vi">
+            <span class="text-[12px] font-black text-[#041026] tracking-tight leading-tight uppercase font-sans" data-i18n="company_header_name">
               CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX
             </span>
-            <span class="text-[10px] font-bold text-brand-sapphire tracking-wide uppercase font-sans leading-tight mt-0.5" data-i18n="company_full_en">
-              APEX INSPECTION AND SURVEY JOINT STOCK COMPANY
-            </span>
-            <span class="text-[9px] font-bold text-slate-500 uppercase flex items-center gap-1.5 mt-0.5">
-              <span><span data-i18n="company_short_label">TÊN VIẾT TẮT:</span> <strong class="text-brand-red" data-i18n="company_short_name">APEX INSPECT</strong></span>
+            <span class="text-[9px] font-bold text-slate-500 uppercase flex items-center gap-1.5 mt-0.5" data-i18n-html="company_header_sub_html">
+              <span>TÊN VIẾT TẮT: <strong class="text-brand-red font-black">APEX INSPECT</strong></span>
               <span class="text-slate-300">•</span>
-              <span data-i18n="company_tax_id">MST: 0202240957</span>
+              <span>MST: 0202371906</span>
             </span>
           </div>
 
           <!-- Medium Screen Branding -->
           <div class="hidden sm:flex xl:hidden flex-col justify-center text-left border-l-2 border-slate-200 pl-2.5">
-            <span class="text-[11px] font-black text-[#041026] tracking-tight leading-tight uppercase font-sans">
-              APEX INSPECT
+            <span class="text-[11px] font-black text-[#041026] tracking-tight leading-tight uppercase font-sans" data-i18n="company_header_med_name">
+              CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX
             </span>
-            <span class="text-[9px] font-bold text-brand-sapphire tracking-wide uppercase font-sans leading-tight">
-              KIỂM ĐỊNH & GIÁM ĐỊNH APEX
+            <span class="text-[9px] font-bold text-brand-sapphire tracking-wide uppercase font-sans leading-tight mt-0.5" data-i18n="company_header_med_sub">
+              TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906
             </span>
           </div>
 
@@ -199,7 +196,7 @@
 
         <!-- Mobile Language Switcher -->
         <div class="mt-4 flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200">
-          <span class="text-xs font-bold text-slate-600 pl-2">Ngôn ngữ / Language:</span>
+          <span class="text-xs font-bold text-slate-600 pl-2" data-i18n="lang_select_label">Ngôn ngữ:</span>
           <div class="flex items-center gap-1">
             <button type="button" class="lang-btn px-3 py-1 rounded-lg text-xs font-black transition bg-brand-sapphire text-white" data-lang="vi">VI</button>
             <button type="button" class="lang-btn px-3 py-1 rounded-lg text-xs font-bold transition text-slate-600 hover:text-brand-sapphire" data-lang="en">EN</button>
@@ -235,6 +232,11 @@
     <!-- 3. HERO SECTION (OCEANIC SAPPHIRE GRADIENT + AUTHENTIC VESSEL) -->
     <section class="relative hero-gradient text-white overflow-hidden min-h-[640px] lg:min-h-[740px] flex items-center">
       
+      <!-- Subtle Full APEX INSPECT Watermark in Hero Background (Logo Mờ Chìm) -->
+      <div class="absolute right-0 lg:right-12 top-1/2 -translate-y-1/2 pointer-events-none z-0 hidden md:block opacity-35 select-none">
+        <img src="assets/apex_watermark_dark.png" alt="" class="w-[480px] lg:w-[600px] h-auto object-contain">
+      </div>
+      
       <!-- Authentic Vessel Background with Contrast Gradients -->
       <div class="absolute inset-0 z-0">
         <img src="assets/hero_ship.jpg" alt="Tàu hàng rời neo đậu tại cảng biển" class="w-full h-full object-cover object-center scale-105 transform motion-safe:transition motion-safe:duration-1000 opacity-25">
@@ -248,36 +250,12 @@
           <!-- Hero Main Copy (7 cols) -->
           <div class="lg:col-span-7 space-y-6">
             
-            <!-- OFFICIAL BILINGUAL COMPANY IDENTITY SHOWCASE AT HERO (TRANG ĐẦU) -->
-            <div class="bg-gradient-to-r from-ocean-dark/95 via-ocean-navy/90 to-ocean-blue/80 border border-brand-cyan/30 rounded-2xl p-4 sm:p-5 backdrop-blur-lg shadow-2xl">
-              <div class="flex items-center gap-4">
-                <div class="bg-white rounded-xl p-2 shrink-0 shadow-md flex items-center justify-center">
-                  <img src="assets/apex_logo_official.png" alt="APEX INSPECT Logo" class="h-14 sm:h-16 w-auto object-contain">
-                </div>
-                <div class="space-y-1.5 border-l border-white/15 pl-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-1.5 py-0.5 text-[9px] font-black bg-brand-red text-white rounded" data-i18n="hero_lang_vi_tag">TIẾNG VIỆT</span>
-                    <h2 class="text-xs sm:text-sm md:text-[15px] font-black text-white tracking-tight uppercase leading-snug" data-i18n="company_full_vi">
-                      CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX
-                    </h2>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-1.5 py-0.5 text-[9px] font-black bg-brand-sapphire text-white rounded" data-i18n="hero_lang_en_tag">ENGLISH</span>
-                    <p class="text-[11px] sm:text-xs md:text-sm font-bold text-brand-cyan tracking-wide uppercase leading-snug" data-i18n="company_full_en">
-                      APEX INSPECTION AND SURVEY JOINT STOCK COMPANY
-                    </p>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-2.5 text-[11px] text-slate-300 pt-0.5 border-t border-white/10 mt-1">
-                    <span><span data-i18n="company_short_label">Tên viết tắt:</span> <strong class="text-white font-extrabold" data-i18n="company_short_name">APEX INSPECT</strong></span>
-                    <span class="text-slate-500">•</span>
-                    <span data-i18n="company_tax_id">MST: 0202240957</span>
-                    <span class="text-slate-500">•</span>
-                    <span class="text-emerald-300 font-semibold inline-flex items-center gap-1">
-                      <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Chuẩn ISO/IEC 17020
-                    </span>
-                  </div>
-                </div>
-              </div>
+            <!-- Pure Single-Language Company Badge -->
+            <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white/10 text-white border border-brand-cyan/30 backdrop-blur-md shadow-lg">
+              <span class="w-2 h-2 rounded-full bg-brand-cyan animate-ping"></span>
+              <span class="font-black text-brand-cyan" data-i18n="hero_company_badge">CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX</span>
+              <span class="text-slate-400 hidden sm:inline">•</span>
+              <span class="text-slate-300 hidden sm:inline" data-i18n="company_tax_id">MST: 0202371906</span>
             </div>
 
             <!-- Quality Badge Sampled From Logo -->
@@ -452,17 +430,17 @@
 
           <!-- Sample Quick Query Buttons -->
           <div class="mt-4 flex flex-wrap items-center gap-2 text-xs">
-            <span class="text-slate-500 font-medium" data-i18n="track_sample_label">Biên bản mẫu thử nghiệm:</span>
-            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26B1386">
+            <span class="text-slate-500 font-medium" data-i18n="tracking_sample_label">Mã chứng thư mẫu thực tế:</span>
+            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26B1386" data-i18n="pill_cert_1">
               #26B1386 (Draft Survey Ngô hạt)
             </button>
-            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26B1332">
+            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26B1332" data-i18n="pill_cert_2">
               #26B1332 (Mớn Sà Lan & Cân Khô Đậu)
             </button>
-            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26C0812">
+            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26C0812" data-i18n="pill_cert_3">
               #26C0812 (Bunker & Xăng Dầu)
             </button>
-            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26D0499">
+            <button type="button" class="sample-cert-pill px-2.5 py-1 rounded-md bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-brand-sapphire border border-slate-200 font-mono font-semibold transition" data-code="26D0499" data-i18n="pill_cert_4">
               #26D0499 (Container Máy Móc)
             </button>
           </div>
@@ -528,35 +506,35 @@
           <div class="service-card bg-white rounded-2xl border border-pearl-border overflow-hidden hover-card flex flex-col" data-category="agri">
             <div class="h-48 overflow-hidden relative">
               <img src="assets/service_agri.jpg" alt="Giám định hàng nông sản rời" class="w-full h-full object-cover transition duration-500 hover:scale-105">
-              <span class="absolute top-3 left-3 px-3 py-1 bg-ocean-dark/90 text-white text-xs font-bold rounded-lg backdrop-blur-md">
+              <span class="absolute top-3 left-3 px-3 py-1 bg-ocean-dark/90 text-white text-xs font-bold rounded-lg backdrop-blur-md" data-i18n="srv1_badge">
                 TACN & Nông Sản Rời
               </span>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-slate-900 leading-snug">
+                <h3 class="text-lg font-bold text-slate-900 leading-snug" data-i18n="srv1_title">
                   Giám Định Khối Hàng Thức Ăn Chăn Nuôi (TACN) & Nông Sản
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-i18n="srv1_desc">
                   Khô đậu tương (Soybean meal), ngô hạt, lúa mỳ, cám mỳ viên, bã ngô lên men (DDGS), hạt cải, thạch cao nông sản...
                 </p>
                 
                 <ul class="mt-4 space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
                   <li class="flex items-start gap-2">
                     <i data-lucide="check" class="w-4 h-4 text-brand-sapphire shrink-0 mt-0.5"></i>
-                    <span><strong>Draft Survey:</strong> Đo mớn tàu biển & mớn sà lan chuyển tải chính xác.</span>
+                    <span data-i18n-html="srv1_b1_html"><strong>Draft Survey:</strong> Đo mớn tàu biển & mớn sà lan chuyển tải chính xác.</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <i data-lucide="check" class="w-4 h-4 text-brand-sapphire shrink-0 mt-0.5"></i>
-                    <span><strong>Giám sát cân 100%:</strong> Cân cầu cảng, đối soát phiếu cân điện tử.</span>
+                    <span data-i18n-html="srv1_b2_html"><strong>Giám sát cân 100%:</strong> Cân cầu cảng, đối soát phiếu cân điện tử.</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <i data-lucide="check" class="w-4 h-4 text-brand-sapphire shrink-0 mt-0.5"></i>
-                    <span><strong>Lấy mẫu chuẩn:</strong> Niêm phong đại diện 3 bên theo chuẩn GAFTA / FOSFA.</span>
+                    <span data-i18n-html="srv1_b3_html"><strong>Lấy mẫu chuẩn:</strong> Niêm phong đại diện 3 bên theo chuẩn GAFTA / FOSFA.</span>
                   </li>
                 </ul>
               </div>
-              <a href="#nominate" class="block text-center py-2.5 px-4 bg-slate-100 hover:bg-brand-sapphire hover:text-white text-slate-800 rounded-xl text-xs font-bold transition">
+              <a href="#nominate" class="block text-center py-2.5 px-4 bg-slate-100 hover:bg-brand-sapphire hover:text-white text-slate-800 rounded-xl text-xs font-bold transition" data-i18n="srv1_cta">
                 Chỉ định giám định mặt hàng này &rarr;
               </a>
             </div>
@@ -800,9 +778,9 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-cyan">ĐỊA BÀN HOẠT ĐỘNG TOÀN QUỐC</span>
-          <h2 class="heading-section text-white mt-2">Mạng Lưới Trạm Giám Định & Cụm Cảng Tác Nghiệp</h2>
-          <p class="text-slate-300 text-sm mt-3">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-cyan" data-i18n="net_tag">ĐỊA BÀN HOẠT ĐỘNG TOÀN QUỐC</span>
+          <h2 class="heading-section text-white mt-2" data-i18n="net_heading">Mạng Lưới Trạm Giám Định & Cụm Cảng Tác Nghiệp</h2>
+          <p class="text-slate-300 text-sm mt-3" data-i18n="net_desc">
             Bao phủ 100% các cụm cảng biển nước sâu, khu neo trung chuyển, cảng dầu khí và hệ thống ICD, kho ngoại quan trên cả nước.
           </p>
         </div>
@@ -811,7 +789,7 @@
           
           <!-- Port Selectors (5 cols) -->
           <div class="lg:col-span-5 space-y-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Chọn cụm cảng cần tác nghiệp:</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2" data-i18n="net_select_label">Chọn cụm cảng cần tác nghiệp:</span>
 
             <!-- Port 1: Hai Phong -->
             <button type="button" class="port-select-btn w-full text-left p-4 rounded-xl border border-brand-cyan bg-brand-sapphire/20 hover:bg-brand-sapphire/30 transition flex items-center justify-between group shadow-sm" data-port="haiphong">
@@ -820,11 +798,11 @@
                   HP
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition">Cụm Cảng Hải Phòng</h4>
-                  <span class="text-xs text-slate-300">Đình Vũ, Lạch Huyện, Nam Đình Vũ</span>
+                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition" data-i18n="net_hp_title">Cụm Cảng Hải Phòng</h4>
+                  <span class="text-xs text-slate-300" data-i18n="net_hp_sub">Đình Vũ, Lạch Huyện, Nam Đình Vũ</span>
                 </div>
               </div>
-              <span class="text-xs font-bold text-emerald-400">20-30 phút</span>
+              <span class="text-xs font-bold text-emerald-400" data-i18n="net_hp_time">20-30 phút</span>
             </button>
 
             <!-- Port 2: Quang Ninh -->
@@ -834,11 +812,11 @@
                   QN
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition">Cụm Cảng Quảng Ninh</h4>
-                  <span class="text-xs text-slate-300">Khu neo Hạ Long, Cảng Cái Lân, Cẩm Phả</span>
+                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition" data-i18n="net_qn_title">Cụm Cảng Quảng Ninh</h4>
+                  <span class="text-xs text-slate-300" data-i18n="net_qn_sub">Khu neo Hạ Long, Cảng Cái Lân, Cẩm Phả</span>
                 </div>
               </div>
-              <span class="text-xs font-bold text-emerald-400">30-45 phút</span>
+              <span class="text-xs font-bold text-emerald-400" data-i18n="net_qn_time">30-45 phút</span>
             </button>
 
             <!-- Port 3: Nghi Son / Cua Lo -->
@@ -848,11 +826,11 @@
                   NS
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition">Cảng Nghi Sơn & Cửa Lò</h4>
-                  <span class="text-xs text-slate-300">Thanh Hóa, Nghệ An (Xăng dầu & Clinker)</span>
+                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition" data-i18n="net_ns_title">Cảng Nghi Sơn & Cửa Lò</h4>
+                  <span class="text-xs text-slate-300" data-i18n="net_ns_sub">Thanh Hóa, Nghệ An (Xăng dầu & Clinker)</span>
                 </div>
               </div>
-              <span class="text-xs font-bold text-slate-300">40-60 phút</span>
+              <span class="text-xs font-bold text-slate-300" data-i18n="net_ns_time">40-60 phút</span>
             </button>
 
             <!-- Port 4: Da Nang / Quy Nhon -->
@@ -862,11 +840,11 @@
                   MT
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition">Cảng Đà Nẵng & Quy Nhơn</h4>
-                  <span class="text-xs text-slate-300">Tiên Sa, Liên Chiểu, Bình Định</span>
+                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition" data-i18n="net_mt_title">Cảng Đà Nẵng & Quy Nhơn</h4>
+                  <span class="text-xs text-slate-300" data-i18n="net_mt_sub">Tiên Sa, Liên Chiểu, Bình Định</span>
                 </div>
               </div>
-              <span class="text-xs font-bold text-slate-300">30-45 phút</span>
+              <span class="text-xs font-bold text-slate-300" data-i18n="net_mt_time">30-45 phút</span>
             </button>
 
             <!-- Port 5: Cai Mep / HCMC -->
@@ -876,11 +854,11 @@
                   MN
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition">Cái Mép - Thị Vải & TP.HCM</h4>
-                  <span class="text-xs text-slate-300">Tân Cảng Cát Lái, Hiệp Phước, Vũng Tàu</span>
+                  <h4 class="font-bold text-sm text-white group-hover:text-brand-cyan transition" data-i18n="net_mn_title">Cái Mép - Thị Vải & TP.HCM</h4>
+                  <span class="text-xs text-slate-300" data-i18n="net_mn_sub">Tân Cảng Cát Lái, Hiệp Phước, Vũng Tàu</span>
                 </div>
               </div>
-              <span class="text-xs font-bold text-slate-300">30-45 phút</span>
+              <span class="text-xs font-bold text-slate-300" data-i18n="net_mn_time">30-45 phút</span>
             </button>
           </div>
 
@@ -940,9 +918,9 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire">QUY CHUẨN TÁC NGHIỆP</span>
-          <h2 class="heading-section text-slate-900 mt-2">Quy Trình Giám Định Khép Kín 5 Bước</h2>
-          <p class="text-sm text-slate-600 mt-3">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire" data-i18n="wf_tag">QUY CHUẨN TÁC NGHIỆP</span>
+          <h2 class="heading-section text-slate-900 mt-2" data-i18n="wf_heading">Quy Trình Giám Định Khép Kín 5 Bước</h2>
+          <p class="text-sm text-slate-600 mt-3" data-i18n="wf_desc">
             Quy trình điều hành bài bản, minh bạch và số hóa đảm bảo khách hàng luôn nắm bắt tình hình hàng hóa theo thời gian thực.
           </p>
         </div>
@@ -955,12 +933,12 @@
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-sapphire font-extrabold font-mono text-xl flex items-center justify-center mb-4 border border-blue-100">
                 01
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Tiếp Nhận Chỉ Định 24/7</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
+              <h3 class="font-bold text-slate-900 text-base mb-2" data-i18n="wf_step1_title">Tiếp Nhận Chỉ Định 24/7</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="wf_step1_desc">
                 Tiếp nhận yêu cầu qua Hotline, Email hoặc Web portal. Đối chiếu vận đơn (B/L), sơ đồ xếp hàng (Stowage plan) và thống nhất phạm vi giám định.
               </p>
             </div>
-            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block">Thời gian: 10 - 15 phút</span>
+            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block" data-i18n="wf_step1_time">Thời gian: 10 - 15 phút</span>
           </div>
 
           <!-- Step 2 -->
@@ -969,12 +947,12 @@
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-sapphire font-extrabold font-mono text-xl flex items-center justify-center mb-4 border border-blue-100">
                 02
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Điều Động Giám Định Viên</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
+              <h3 class="font-bold text-slate-900 text-base mb-2" data-i18n="wf_step2_title">Điều Động Giám Định Viên</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="wf_step2_desc">
                 Bố trí giám định viên đúng chuyên ngành (mớn nước / hàng lỏng / container). Chuẩn bị thiết bị đo đạc đã hiệu chuẩn và di chuyển ra tàu/khu neo.
               </p>
             </div>
-            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block">Có mặt: 30 - 60 phút</span>
+            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block" data-i18n="wf_step2_time">Có mặt: 30 - 60 phút</span>
           </div>
 
           <!-- Step 3 -->
@@ -983,12 +961,12 @@
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-sapphire font-extrabold font-mono text-xl flex items-center justify-center mb-4 border border-blue-100">
                 03
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Tác Nghiệp & Báo Cáo Ca</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
+              <h3 class="font-bold text-slate-900 text-base mb-2" data-i18n="wf_step3_title">Tác Nghiệp & Báo Cáo Ca</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="wf_step3_desc">
                 Đọc mớn, đo bồn, giám sát cân, lấy mẫu niêm phong. Cập nhật tiến độ ca (Shift Report) kèm hình ảnh thực tế hiện trường qua Zalo/Email.
               </p>
             </div>
-            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block">Theo từng ca làm việc</span>
+            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block" data-i18n="wf_step3_time">Theo từng ca làm việc</span>
           </div>
 
           <!-- Step 4 -->
@@ -997,12 +975,12 @@
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-sapphire font-extrabold font-mono text-xl flex items-center justify-center mb-4 border border-blue-100">
                 04
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Cấp Báo Cáo Sơ Bộ (Interim)</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
+              <h3 class="font-bold text-slate-900 text-base mb-2" data-i18n="wf_step4_title">Cấp Báo Cáo Sơ Bộ (Interim)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="wf_step4_desc">
                 Ngay khi hoàn tất dỡ hàng/cân/mớn cuối, Giám định viên ký biên bản 3 bên với Tàu và cấp ngay Báo cáo sơ bộ (Interim Report) cho khách hàng.
               </p>
             </div>
-            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block">Cấp ngay tại hiện trường</span>
+            <span class="text-[11px] font-semibold text-brand-sapphire mt-4 block" data-i18n="wf_step4_time">Cấp ngay tại hiện trường</span>
           </div>
 
           <!-- Step 5 (Royal Accent) -->
@@ -1011,12 +989,12 @@
               <div class="w-12 h-12 rounded-xl bg-brand-sapphire text-white font-extrabold font-mono text-xl flex items-center justify-center mb-4 shadow-md shadow-brand-sapphire/30">
                 05
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Phát Hành Chứng Thư</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
+              <h3 class="font-bold text-slate-900 text-base mb-2" data-i18n="wf_step5_title">Phát Hành Chứng Thư</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="wf_step5_desc">
                 Hội đồng kỹ thuật thẩm định số liệu, đóng dấu pháp nhân và phát hành Chứng thư Giám định chính thức (Certificate of Inspection) bản cứng & bản số.
               </p>
             </div>
-            <span class="text-[11px] font-semibold text-emerald-600 mt-4 block font-bold">Pháp lý hoàn chỉnh</span>
+            <span class="text-[11px] font-semibold text-emerald-600 mt-4 block font-bold" data-i18n="wf_step5_time">Pháp lý hoàn chỉnh</span>
           </div>
 
         </div>
@@ -1032,9 +1010,9 @@
           
           <!-- Equipment Description (6 cols) -->
           <div class="lg:col-span-6 space-y-6">
-            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire">TIÊU CHUẨN KỸ THUẬT QUỐC TẾ</span>
-            <h2 class="heading-section text-slate-900">Trang Thiết Bị Đo Đạc & Kiểm Tra Hiện Trường Chuyên Dụng</h2>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire" data-i18n="eq_tag">TIÊU CHUẨN KỸ THUẬT QUỐC TẾ</span>
+            <h2 class="heading-section text-slate-900" data-i18n="eq_heading">Trang Thiết Bị Đo Đạc & Kiểm Tra Hiện Trường Chuyên Dụng</h2>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="eq_desc">
               APEX INSPECT đầu tư đồng bộ hệ thống công cụ đo đạc kiểm định hàng hải đạt chuẩn đo lường quốc tế, có chứng chỉ hiệu chuẩn định kỳ từ các trung tâm đo lường uy tín.
             </p>
 
@@ -1042,33 +1020,33 @@
               <div class="p-4 rounded-xl border border-pearl-border bg-pearl-bg space-y-1.5">
                 <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
                   <i data-lucide="waves" class="w-4 h-4 text-brand-sapphire"></i>
-                  <span>Đo Mớn & Ống Dũi Mặt Nước</span>
+                  <span data-i18n="eq2_title">Đo Mớn & Ống Dũi Mặt Nước</span>
                 </div>
-                <p class="text-slate-600">Ống dũi chuyên dụng triệt tiêu sóng dồn, giúp đọc vạch mớn nước tàu biển chính xác đến từng centimet trong điều kiện thời tiết phức tạp.</p>
+                <p class="text-slate-600" data-i18n="eq2_desc">Ống dũi chuyên dụng triệt tiêu sóng dồn, giúp đọc vạch mớn nước tàu biển chính xác đến từng centimet trong điều kiện thời tiết phức tạp.</p>
               </div>
 
               <div class="p-4 rounded-xl border border-pearl-border bg-pearl-bg space-y-1.5">
                 <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
                   <i data-lucide="activity" class="w-4 h-4 text-brand-red"></i>
-                  <span>Siêu Âm Rò Rỉ Nắp Hầm (ULD)</span>
+                  <span data-i18n="eq4_title">Siêu Âm Rò Rỉ Nắp Hầm (ULD)</span>
                 </div>
-                <p class="text-slate-600">Máy kiểm tra rò rỉ sóng siêu âm Ultrasonic Leak Detector phát hiện chính xác khe hở gioăng nắp hầm hàng mà không cần thử nước áp lực.</p>
+                <p class="text-slate-600" data-i18n="eq4_desc">Máy kiểm tra rò rỉ sóng siêu âm Ultrasonic Leak Detector phát hiện chính xác khe hở gioăng nắp hầm hàng mà không cần thử nước áp lực.</p>
               </div>
 
               <div class="p-4 rounded-xl border border-pearl-border bg-pearl-bg space-y-1.5">
                 <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
                   <i data-lucide="git-commit" class="w-4 h-4 text-brand-cyan"></i>
-                  <span>Thước Đo Dầu Sounding Tape</span>
+                  <span data-i18n="eq3_title">Thước Đo Dầu Sounding Tape</span>
                 </div>
-                <p class="text-slate-600">Thước dây điện tử và cơ khí chuyên dụng đo két nhiên liệu FO/DO, có quả dọi chuẩn và chứng chỉ kiểm định định kỳ.</p>
+                <p class="text-slate-600" data-i18n="eq3_desc">Thước dây điện tử và cơ khí chuyên dụng đo két nhiên liệu FO/DO, có quả dọi chuẩn và chứng chỉ kiểm định định kỳ.</p>
               </div>
 
               <div class="p-4 rounded-xl border border-pearl-border bg-pearl-bg space-y-1.5">
                 <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
                   <i data-lucide="test-tube-2" class="w-4 h-4 text-amber-600"></i>
-                  <span>Dụng Cụ Lấy Mẫu GAFTA/FOSFA</span>
+                  <span data-i18n="eq1_title">Dụng Cụ Lấy Mẫu GAFTA/FOSFA</span>
                 </div>
-                <p class="text-slate-600">Ống xiên tầng sâu (Spear sampler), bộ chia mẫu Jones bằng Inox, kẹp chì và tem niêm phong độc quyền chống tráo đổi mẫu hàng.</p>
+                <p class="text-slate-600" data-i18n="eq1_desc">Ống xiên tầng sâu (Spear sampler), bộ chia mẫu Jones bằng Inox, kẹp chì và tem niêm phong độc quyền chống tráo đổi mẫu hàng.</p>
               </div>
             </div>
 
@@ -1162,14 +1140,13 @@
           <div class="lg:col-span-5">
             <div class="bg-white rounded-2xl border border-pearl-border shadow-xl p-6 sm:p-8 space-y-6">
               
-              <!-- Card Header with Official Intact Logo -->
+              <!-- Card Header with Sleek Official Logo -->
               <div class="border-b border-pearl-border pb-4 flex items-center gap-4">
-                <img src="assets/apex_logo_official.png" alt="APEX INSPECT" class="h-16 w-auto object-contain bg-white rounded-xl p-1 shadow-sm border border-slate-100">
+                <img src="assets/apex_logo_official.png" alt="APEX INSPECT" class="h-12 sm:h-14 w-auto object-contain shrink-0">
                 <div>
-                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Hồ Sơ Năng Lực</span>
-                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight" data-i18n="company_full_vi">CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX</h3>
-                  <span class="text-[11px] font-bold text-brand-sapphire block uppercase" data-i18n="company_full_en">APEX INSPECTION AND SURVEY JOINT STOCK COMPANY</span>
-                  <span class="text-[10px] font-extrabold text-slate-500 block uppercase mt-0.5">APEX INSPECT • MST: 0202240957</span>
+                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider" data-i18n="about_profile_tag">Hồ Sơ Doanh Nghiệp</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight uppercase" data-i18n="company_about_name">CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX</h3>
+                  <span class="text-[11px] font-bold text-brand-sapphire block uppercase mt-0.5" data-i18n="company_about_sub">TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906</span>
                 </div>
               </div>
 
@@ -1226,9 +1203,9 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-10">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire">TIẾP NHẬN CHỈ ĐỊNH 24/7</span>
-          <h2 class="heading-section text-slate-900 mt-1">Gửi Yêu Cầu Giám Định Hiện Trường</h2>
-          <p class="text-sm text-slate-600 mt-2">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire" data-i18n="nom_tag">TIẾP NHẬN CHỈ ĐỊNH 24/7</span>
+          <h2 class="heading-section text-slate-900 mt-1" data-i18n="nom_heading">Gửi Yêu Cầu Giám Định Hiện Trường</h2>
+          <p class="text-sm text-slate-600 mt-2" data-i18n="nom_desc">
             Điền thông tin chỉ định giám định dưới đây. Ban điều phối hiện trường APEX sẽ liên hệ phản hồi xác nhận trong vòng 15 phút.
           </p>
         </div>
@@ -1353,8 +1330,8 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-10">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire">GIẢI ĐÁP NGHIỆP VỤ</span>
-          <h2 class="text-2xl font-bold text-slate-900 mt-1">Câu Hỏi Thường Gặp Về Dịch Vụ Giám Định</h2>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sapphire" data-i18n="faq_tag">GIẢI ĐÁP NGHIỆP VỤ</span>
+          <h2 class="text-2xl font-bold text-slate-900 mt-1" data-i18n="faq_heading">Câu Hỏi Thường Gặp Về Dịch Vụ Giám Định</h2>
         </div>
 
         <div class="space-y-3">
@@ -1362,10 +1339,10 @@
           <!-- FAQ 1 -->
           <div class="faq-item bg-white rounded-xl border border-pearl-border overflow-hidden shadow-sm">
             <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex items-center justify-between hover:text-brand-sapphire transition" aria-expanded="false">
-              <span>Thời gian Giám định viên APEX có mặt tại tàu/khu neo sau khi nhận chỉ định là bao lâu?</span>
+              <span data-i18n="faq_q1">Thời gian Giám định viên APEX có mặt tại tàu/khu neo sau khi nhận chỉ định là bao lâu?</span>
               <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
             </button>
-            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100" data-i18n="faq_a1">
               Tại các cụm cảng trọng điểm như Cảng Hải Phòng, Khu neo Hạ Long và Cảng Cái Lân, APEX có đội ngũ giám định viên và phương tiện cano thường trực 24/7, cam kết có mặt trên boong tàu trong vòng <strong>30 đến 45 phút</strong> kể từ khi nhận được thông báo tàu cập hoặc sẵn sàng làm hàng.
             </div>
           </div>
@@ -1373,10 +1350,10 @@
           <!-- FAQ 2 -->
           <div class="faq-item bg-white rounded-xl border border-pearl-border overflow-hidden shadow-sm">
             <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex items-center justify-between hover:text-brand-sapphire transition" aria-expanded="false">
-              <span>Chứng thư giám định của APEX INSPECT có giá trị pháp lý như thế nào?</span>
+              <span data-i18n="faq_q2">Chứng thư giám định của APEX INSPECT có giá trị pháp lý như thế nào?</span>
               <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
             </button>
-            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100" data-i18n="faq_a2">
               Chứng thư giám định của APEX INSPECT được ban hành hoàn toàn độc lập, khách quan theo Luật Thương mại Việt Nam và các công ước hàng hải quốc tế. Chứng thư có đầy đủ giá trị pháp lý để quyết toán hợp đồng ngoại thương, mở thư tín dụng L/C, làm thủ tục hải quan thông quan và làm chứng cứ trước Tòa án, Trọng tài thương mại hoặc các Hội bảo hiểm P&I quốc tế.
             </div>
           </div>
@@ -1384,10 +1361,10 @@
           <!-- FAQ 3 -->
           <div class="faq-item bg-white rounded-xl border border-pearl-border overflow-hidden shadow-sm">
             <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex items-center justify-between hover:text-brand-sapphire transition" aria-expanded="false">
-              <span>Khách hàng có được nhận báo cáo tiến độ trong quá trình làm hàng không?</span>
+              <span data-i18n="faq_q3">Khách hàng có được nhận báo cáo tiến độ trong quá trình làm hàng không?</span>
               <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
             </button>
-            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100" data-i18n="faq_a3">
               Có. APEX triển khai hệ thống báo cáo thời gian thực: Sau mỗi ca làm việc (Shift Report), giám định viên sẽ gửi cập nhật khối lượng đã dỡ, tình trạng hầm hàng và hình ảnh hiện trường qua Email hoặc Zalo nhóm. Ngay khi kết thúc làm hàng, Báo cáo sơ bộ (Interim Report) được cấp ngay tại hiện trường.
             </div>
           </div>
@@ -1395,10 +1372,10 @@
           <!-- FAQ 4 -->
           <div class="faq-item bg-white rounded-xl border border-pearl-border overflow-hidden shadow-sm">
             <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex items-center justify-between hover:text-brand-sapphire transition" aria-expanded="false">
-              <span>Quy định lưu mẫu và gửi mẫu phân tích đối với hàng nông sản & thức ăn chăn nuôi?</span>
+              <span data-i18n="faq_q4">Quy định lưu mẫu và gửi mẫu phân tích đối với hàng nông sản & thức ăn chăn nuôi?</span>
               <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
             </button>
-            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+            <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100" data-i18n="faq_a4">
               Mẫu hàng được lấy bằng dụng cụ chuyên dụng (Spear sampler) theo đúng quy chuẩn GAFTA / FOSFA, chia đều bằng bộ chia mẫu Jones và niêm phong kẹp chì đại diện 3 bên (Chủ tàu/Đại lý - Chủ hàng - APEX INSPECT). Mẫu được bàn giao cho phòng Lab chỉ định và lưu trữ tại kho mẫu APEX trong thời gian tối thiểu 90 ngày phục vụ đối soát.
             </div>
           </div>
@@ -1420,16 +1397,16 @@
             <img src="assets/apex_logo_official.png" alt="APEX INSPECT" class="h-12 sm:h-14 w-auto object-contain">
             <div class="flex flex-col text-left border-l border-slate-200 pl-3">
               <span class="text-xs font-black text-[#041026] uppercase">APEX INSPECT</span>
-              <span class="text-[9px] font-bold text-brand-sapphire uppercase">ISO/IEC 17020 ACCREDITED</span>
+              <span class="text-[9px] font-bold text-brand-sapphire uppercase" data-i18n="footer_iso_badge">CHỨNG NHẬN ISO/IEC 17020</span>
             </div>
           </div>
 
           <div class="space-y-1">
-            <p class="text-xs leading-relaxed text-white font-extrabold uppercase" data-i18n="footer_company_vi">
+            <h4 class="text-xs sm:text-sm leading-relaxed text-white font-extrabold uppercase" data-i18n="company_footer_name">
               CÔNG TY CỔ PHẦN KIỂM ĐỊNH VÀ GIÁM ĐỊNH APEX
-            </p>
-            <p class="text-[11px] leading-relaxed text-brand-cyan font-bold uppercase" data-i18n="footer_company_en">
-              APEX INSPECTION AND SURVEY JOINT STOCK COMPANY
+            </h4>
+            <p class="text-[11px] font-bold text-brand-cyan uppercase tracking-wide" data-i18n="company_footer_sub">
+              TÊN VIẾT TẮT: APEX INSPECT • MST: 0202371906
             </p>
             <p class="text-xs leading-relaxed text-slate-400 max-w-sm pt-1" data-i18n="footer_tagline">
               Tổ chức giám định độc lập chuyên nghiệp phục vụ chuỗi cung ứng hàng hải, xuất nhập khẩu và thương mại quốc tế.
