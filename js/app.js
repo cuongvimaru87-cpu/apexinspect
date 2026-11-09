@@ -349,6 +349,13 @@ const I18N = {
     ft_accreditation_1: "Hệ thống quản lý chất lượng đạt chuẩn quốc tế <strong>ISO/IEC 17020:2012</strong>.",
     ft_accreditation_2: "Quy trình lấy mẫu tuân thủ nghiêm ngặt quy tắc thương mại <strong>GAFTA & FOSFA</strong>.",
     ft_values: "Độc lập • Khách quan • Chuẩn xác • Trách nhiệm",
+    alt_srv_agri: "Giám định hàng nông sản rời",
+    alt_srv_marine: "Giám định hàng hải và nhiên liệu",
+    alt_srv_container: "Giám định container và hàng hóa",
+    alt_srv_liquid: "Giám định xăng dầu và hàng lỏng",
+    alt_srv_industry: "Giám định hàng rời công nghiệp",
+    alt_srv_machinery: "Giám định máy móc thiết bị dự án",
+    alt_eq_showcase: "Trang thiết bị kiểm tra giám định hiện trường",
     call_hotline_aria: "Gọi Trực Ban 24/7",
     back_to_top_aria: "Lên đầu trang",
     open_menu_aria: "Mở Menu",
@@ -707,6 +714,13 @@ const I18N = {
     ft_accreditation_1: "Quality management system accredited to international standard <strong>ISO/IEC 17020:2012</strong>.",
     ft_accreditation_2: "Sampling procedures strictly adhere to <strong>GAFTA & FOSFA</strong> international trade rules.",
     ft_values: "Independence • Impartiality • Accuracy • Responsibility",
+    alt_srv_agri: "Agri-bulk and animal feed inspection",
+    alt_srv_marine: "Marine and bunker survey",
+    alt_srv_container: "Container and containerized cargo inspection",
+    alt_srv_liquid: "Petroleum and liquid bulk cargo inspection",
+    alt_srv_industry: "Industrial dry bulk and mineral ore inspection",
+    alt_srv_machinery: "Industrial machinery and project equipment inspection",
+    alt_eq_showcase: "Field inspection and measurement equipment",
     call_hotline_aria: "Call 24/7 Operations Desk",
     back_to_top_aria: "Back to Top",
     open_menu_aria: "Open Menu",
@@ -871,6 +885,26 @@ window.setLanguage = function(lang) {
       el.setAttribute("aria-label", I18N[lang][key]);
     }
   });
+
+  // 5. Bilingual Images (VI/EN)
+  document.querySelectorAll("img[data-i18n-src-en]").forEach(img => {
+    const srcEn = img.dataset.i18nSrcEn || img.getAttribute("data-i18n-src-en");
+    const srcVi = img.dataset.i18nSrcVi || img.getAttribute("data-i18n-src-vi");
+    if (lang === "en" && srcEn) {
+      img.src = srcEn;
+    } else if (lang === "vi" && srcVi) {
+      img.src = srcVi;
+    }
+  });
+
+  // 6. Image Alt Attributes
+  document.querySelectorAll("img[data-i18n-alt]").forEach(img => {
+    const key = img.dataset.i18nAlt;
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
+      img.alt = I18N[lang][key];
+    }
+  });
+
 
 
   // 4. Refresh active port details card
