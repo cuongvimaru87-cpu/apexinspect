@@ -332,7 +332,7 @@ const I18N = {
     nom_ph_phone: "0912 xxx xxx",
     nom_ph_notes: "Yêu cầu cụ thể: lấy mẫu mấy bên, kẹp chì seal hãng, yêu cầu cấp Interim Report trong ca đêm...",
     nom_btn_submit: "Gửi Chỉ Định & Nhận Xác Nhận Tác Nghiệp",
-    nom_hotline_note: "Cần hỗ trợ khẩn cấp ngay tại tàu? Vui lòng gọi trực ban hotline 24/7: <a href=\"tel:0961799968\" class=\"text-brand-red font-bold underline\">0961 799 968</a>.",
+    nom_hotline_note: "Cần hỗ trợ khẩn cấp ngay tại tàu? Vui lòng gọi trực ban hotline 24/7: <a href=\"tel:0961799968\" class=\"text-brand-red font-bold underline\">0961 7999 68</a>.",
     ft_link_srv1: "Draft Survey (Mớn nước)",
     ft_link_srv2: "Nông sản rời & TACN",
     ft_link_srv3: "Bunker Survey (BQS)",
@@ -697,7 +697,7 @@ const I18N = {
     nom_ph_phone: "(+84) 912 xxx xxx",
     nom_ph_notes: "Specific instructions: tripartite sampling, seal verification, interim report requirements, night shift attendance...",
     nom_btn_submit: "Submit Survey Nomination & Receive Confirmation",
-    nom_hotline_note: "Need urgent on-board attendance? Call our 24/7 duty desk hotline: <a href=\"tel:0961799968\" class=\"text-brand-red font-bold underline\">(+84) 961 799 968</a>.",
+    nom_hotline_note: "Need urgent on-board attendance? Call our 24/7 duty desk hotline: <a href=\"tel:0961799968\" class=\"text-brand-red font-bold underline\">0961 7999 68</a>.",
     ft_link_srv1: "Draft Survey (Initial & Final)",
     ft_link_srv2: "Agri-Bulk & Animal Feedstuffs",
     ft_link_srv3: "Bunker Quantity Survey (BQS)",
@@ -1102,7 +1102,7 @@ function initCertificateTracking() {
           </p>
           <div class="pt-2">
             <a href="tel:0961799968" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-sapphire text-white rounded-lg text-sm font-semibold hover:bg-brand-sapphireHover transition">
-              ${isEn ? "Call 24/7 Hotline: (+84) 961 799 968" : "Gọi Hotline 24/7: 0961 799 968"}
+              ${isEn ? "Call 24/7 Hotline: 0961 7999 68" : "Gọi Hotline 24/7: 0961 7999 68"}
             </a>
           </div>
         </div>
